@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRoundTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Vreme izvlacenja: "
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRoundTimeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRoundTime"
+        app:layout_constraintStart_toEndOf="@+id/tvRoundTime"
+        app:layout_constraintTop_toTopOf="@+id/tvRoundTime"
+        tools:text="15:15" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:text="Kolo: "
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRoundTime"
+        app:layout_constraintStart_toEndOf="@+id/tvRoundTimeValue"
+        app:layout_constraintTop_toTopOf="@+id/tvRoundTime" />
+
+    <ScrollView
+        android:id="@+id/svRoundNumbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRound">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvRoundNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="B.K." />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="1" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/vDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/svRoundNumbers" />
+
+    <ScrollView
+        android:id="@+id/svRoundNumberValues"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/vDivider">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvRoundNumberValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Kvota" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOneValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="3.6" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTwoValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvThreeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="60" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvFourValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="250" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvFiveValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1000" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSixValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3800" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSevenValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12500" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvEightValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="35000" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRoundValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRound"
+        app:layout_constraintStart_toEndOf="@+id/tvRound"
+        app:layout_constraintTop_toTopOf="@+id/tvRound"
+        tools:text="838393" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRandomChoice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="Slucajni odabir"
+        android:textColor="@color/grey"
+        android:background="@color/warm_yellow"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/svRoundNumberValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumbers"
+        app:layout_constraintStart_toEndOf="@+id/tvRandomChoice"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="Brojeva: "
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/svRoundNumberValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumbersValue"
+        app:layout_constraintStart_toEndOf="@+id/tvNumbers"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:padding="5dp"
+        tools:text="8"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/svRoundNumberValues"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNumbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRandomChoice"
+        app:spanCount="8"
+        tools:listitem="@layout/item_number" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
